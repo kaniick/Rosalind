@@ -1,0 +1,21 @@
+Problem
+Given: A string s of length at most 200 letters and four integers a, b, c and d.
+Return: The slice of this string from indices a through b and c through d (with space in between), inclusively.
+
+Sample Dataset:
+HumptyDumptysatonawallHumptyDumptyhadagreatfallAlltheKingshorsesandalltheKingsmenCouldntputHumptyDumptyinhisplaceagain.
+22 27 97 102
+
+Sample Output:
+Humpty Dumpty
+
+Dataset Given:
+C78d6LzsUmaauH6W4Xa2rIFXYQC5Zeea9Pr7yAkABMda2npdcjwLqQULsAkDWvittnWY1gJg6CallipogonvrLroyC0PyjK1Piy2GcjMuxsJcoCf41X0cLayjwVzoQXNP6lehmanniYDptWCngO7R69jhRbeVU46hQrV3yZFpmRzKogedgoJRixA55BvJo2I.
+73 82 130 137
+
+Code:
+data='C78d6LzsUmaauH6W4Xa2rIFXYQC5Zeea9Pr7yAkABMda2npdcjwLqQULsAkDWvittnWY1gJg6CallipogonvrLroyC0PyjK1Piy2GcjMuxsJcoCf41X0cLayjwVzoQXNP6lehmanniYDptWCngO7R69jhRbeVU46hQrV3yZFpmRzKogedgoJRixA55BvJo2I.'
+data[73:83]+" "+data[130:138]
+
+Solution:
+Callipogon lehmanni
