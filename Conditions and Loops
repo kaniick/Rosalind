@@ -1,0 +1,23 @@
+Problem
+Given: Two positive integers a and b (a<b<10000).
+Return: The sum of all odd integers from a through b, inclusively.
+
+Sample Dataset
+100 200
+
+Sample Output
+7500
+
+Hint
+You can use a % 2 == 1 to test if a is odd.
+
+Dataset Given:
+4003 8826
+
+Code:
+a=4003
+b=8826
+sum(i for i in xrange(a, b) if i%2)
+
+Solution:
+15470568
