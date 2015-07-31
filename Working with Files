@@ -1,0 +1,89 @@
+Problem
+Given: A file containing at most 1000 lines.
+Return: A file containing all the even-numbered lines from the original file. Assume 1-based numbering of lines.
+
+Sample Dataset:
+Bravely bold Sir Robin rode forth from Camelot
+Yes, brave Sir Robin turned about
+He was not afraid to die, O brave Sir Robin
+And gallantly he chickened out
+He was not at all afraid to be killed in nasty ways
+Bravely talking to his feet
+Brave, brave, brave, brave Sir Robin
+He beat a very brave retreat
+
+Sample Output:
+Yes, brave Sir Robin turned about
+And gallantly he chickened out
+Bravely talking to his feet
+He beat a very brave retreat
+
+Dataset Given (Filename: input.txt):
+`Twas brillig, and the slithy toves
+Some things in life are bad, they can really make you mad
+  Did gyre and gimble in the wabe:
+Other things just make you swear and curse
+All mimsy were the borogoves,
+When you're chewing on life's gristle, don't grumble give a whistle
+  And the mome raths outgrabe.
+This will help things turn out for the best
+"Beware the Jabberwock, my son!
+Always look on the bright side of life
+  The jaws that bite, the claws that catch!
+Always look on the right side of life
+Beware the Jubjub bird, and shun
+If life seems jolly rotten, there's something you've forgotten
+  The frumious Bandersnatch!"
+And that's to laugh and smile and dance and sing
+He took his vorpal sword in hand:
+When you're feeling in the dumps, don't be silly, chumps
+  Long time the manxome foe he sought --
+Just purse your lips and whistle, that's the thing
+So rested he by the Tumtum tree,
+So, always look on the bright side of death
+  And stood awhile in thought.
+Just before you draw your terminal breath
+And, as in uffish thought he stood,
+Life's a counterfeit and when you look at it
+  The Jabberwock, with eyes of flame,
+Life's a laugh and death's the joke, it's true
+Came whiffling through the tulgey wood,
+You see, it's all a show, keep them laughing as you go
+  And burbled as it came!
+Just remember the last laugh is on you
+One, two! One, two! And through and through
+Always look on the bright side of life
+  The vorpal blade went snicker-snack!
+And always look on the right side of life
+He left it dead, and with its head
+Always look on the bright side of life
+  He went galumphing back.
+And always look on the right side of life
+
+Code:
+with open('/Users/home/Desktop/input.txt') as input_file:
+	for index, line in enumerate(input_file.readlines(), 1):
+	 if index % 2 == 0:
+	  print line.replace('\n', '')
+	  
+Solution:
+Some things in life are bad, they can really make you mad
+Other things just make you swear and curse
+When you're chewing on life's gristle, don't grumble give a whistle
+This will help things turn out for the best
+Always look on the bright side of life
+Always look on the right side of life
+If life seems jolly rotten, there's something you've forgotten
+And that's to laugh and smile and dance and sing
+When you're feeling in the dumps, don't be silly, chumps
+Just purse your lips and whistle, that's the thing
+So, always look on the bright side of death
+Just before you draw your terminal breath
+Life's a counterfeit and when you look at it
+Life's a laugh and death's the joke, it's true
+You see, it's all a show, keep them laughing as you go
+Just remember the last laugh is on you
+Always look on the bright side of life
+And always look on the right side of life
+Always look on the bright side of life
+And always look on the right side of life
