@@ -18,8 +18,8 @@ GCCGTCACGTGGAAGATATTAGTCAAAGATCAGCAGCGCGTTTACCCCGCAGGGAGTCATAGCCGCGACCCGCACGATGG
 
 Code:
 
-```python
-import fileinput
+
+`import fileinput
 
 for row in fileinput.input('/Users/kaniick/Desktop/input.txt'):
 	a_count = 0
@@ -36,17 +36,10 @@ for row in fileinput.input('/Users/kaniick/Desktop/input.txt'):
 		elif c == 'T':
 			t_count = t_count + 1
 
-print str(a_count) + ' ' + str(c_count) + ' ' + str(g_count) + ' ' + str(t_count)
-```
+print str(a_count) + ' ' + str(c_count) + ' ' + str(g_count) + ' ' + str(t_count)`
 
 Solution:
 226 223 226 211
 this means there are 226 A, 223 C, 226 G, and 221 T
 
 **The file is named input.txt and houses the given DNA sequence from the provided dataset by Rosalind**
-
-
-```python
-s = "Python syntax highlighting"
-print s
-```
