@@ -1,0 +1,45 @@
+# Counting DNA Nucleotides
+
+Problem:
+A string is simply an ordered collection of symbols selected from some alphabet and formed into a word; the length of a string is the number of symbols that it contains.
+An example of a length 21 DNA string (whose alphabet contains the symbols 'A', 'C', 'G', and 'T') is "ATGCTTCAGAAAGGTCTTACG."
+
+Given: A DNA string s of length at most 1000 nt.
+Return: Four integers (separated by spaces) counting the respective number of times that the symbols 'A', 'C', 'G', and 'T' occur in s.
+
+Sample Dataset
+AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
+
+Sample Output
+20 12 17 21
+
+Dataset Given:
+GCCGTCACGTGGAAGATATTAGTCAAAGATCAGCAGCGCGTTTACCCCGCAGGGAGTCATAGCCGCGACCCGCACGATGGGGGGTCAATGTAGTACACCGTATTATAGCAGCAGATTCACAGCAGCCATCGAGCCGTCTAAATACGAAACGGTACCCCATCGACGGATTAAAGTGTACCTGGAGGCATTCTCGTGGGTGCGGGTATAGGGACGTTGTCGTAACGGTGTTGTACTCTGCTAGCCTAGACCCTGGAACATCTTTAGACCTCCGCCTCCTGTGACCCCGATGGCTGCAGCACTGAATACCCAAGTACGACCGTGTATCGACGTAGGCACCTCTCTGCTGGGACAATGAAATCGTGAGTATTGCTCTCAAATTAATTCACCTCCAGTTAACGCCTAGAGATACGATGACTGGCGTGGTGGCCGCCGAATCACACCTCCTTGCTGAGGGTTTAAACCAGATCCTGACGACCATCGTAACATTCACAAATGTATAACTTATGTTCATTACCTAGCGAAATTACAGTCTGGCGGTGCTCCTCGTGGTGTTCGTACGCACATCCCTAATCGACCAATTTCACTATTTAAACGCCACATGTGCCCAATTCTCGCTCTCTGCGTATCTAGTAGACTCATGCGCGAACTCGCGCCGGAGCGGCTTCTGCGTAGAATCGTGTGCTCGATGTGGACACATAGAGGAAGCGTTAGGTATCGAATAAGTCGAAAAAGTACCGTAGGGGCTATGTAAAGTATCTAAGTAGAGGCCCAGAAAGTATCTGTGGGGGCATCTCCCCAAAACGGGGTCCTGTGGAAAATGAACGGGATTATATGGTTTACATGCTCAATTGTTCGCTCGGGCACAATAACGCGTGTCCAAGCGGGA
+
+Code:
+```python
+import fileinput
+
+for row in fileinput.input('/Users/kaniick/Desktop/input.txt'):
+	a_count = 0
+	c_count = 0
+	g_count = 0
+	t_count = 0
+	for c in row:
+		if c == 'A':
+			a_count = a_count + 1
+		elif c == 'C':
+			c_count = c_count + 1
+		elif c == 'G':
+			g_count = g_count + 1
+		elif c == 'T':
+			t_count = t_count + 1
+
+print str(a_count) + ' ' + str(c_count) + ' ' + str(g_count) + ' ' + str(t_count)
+```
+
+Solution:
+226 223 226 211
+this means there are 226 A, 223 C, 226 G, and 221 T
+
+**The file is named input.txt and houses the given DNA sequence from the provided dataset by Rosalind**
