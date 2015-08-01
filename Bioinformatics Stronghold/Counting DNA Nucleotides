@@ -44,3 +44,9 @@ Solution:
 this means there are 226 A, 223 C, 226 G, and 221 T
 
 **The file is named input.txt and houses the given DNA sequence from the provided dataset by Rosalind**
+
+
+```python
+s = "Python syntax highlighting"
+print s
+```
