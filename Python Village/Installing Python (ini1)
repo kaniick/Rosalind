@@ -1,9 +1,10 @@
-Problem
-
+Problem:
 After downloading and installing Python, type import this into the Python command line and see what happens. Then, click the "Download dataset" button below and copy the Zen of Python into the space provided.
 
-Solution
+Code:
+import this
 
+Solution:
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
