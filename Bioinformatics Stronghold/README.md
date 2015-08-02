@@ -13,17 +13,12 @@ REVC |	Complementing a Strand of DNA
 FIB |	Rabbits and Recurrence Relations
 GC |	Computing GC Content
 HAMM |	Counting Point Mutations
-IPRB |	Mendel's First Law	5207	
- 	 	 
-PROT	Translating RNA into Protein	7525	
- 	 	 
-SUBS	Finding a Motif in DNA	7855	
- 	 	 
-CONS	Consensus and Profile	4561	
- 	 	 
-FIBD	Mortal Fibonacci Rabbits	3469	
- 	 	 
-GRPH	Overlap Graphs	3797	
+IPRB |	Mendel's First Law
+PROT |	Translating RNA into Protein
+SUBS |	Finding a Motif in DNA
+CONS | Consensus and Profile	
+FIBD	| Mortal Fibonacci Rabbits
+GRPH	| Overlap Graphs
  	 	 
 IEV	Calculating Expected Offspring	3238	
  	 	 
